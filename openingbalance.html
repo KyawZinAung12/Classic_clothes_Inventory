@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classic Export Clothes | Opening Balance</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="dashboard.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text text-white">Classic Clothes</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="inward.html" class="nav-link">
+              <i class="nav-icon fas fa-coins"></i>
+              <p>
+                Stock Ins (WH)
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="openingbalance.html" class="nav-link active">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                Stock Transfer 
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Product Management
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="products.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Products</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="categories.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Categories</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="brands.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Brands</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="kinds.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Kinds</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="colors.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Colors</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sizes.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Sizes</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tree"></i>
+              <p>
+                Report
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pqareport.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Product Quantity Alerts</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="stockinreport.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>StockIn Report</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="stocktransferreport.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Stock Transfer Report</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="stocklocationreport.html" class="nav-link">
+                  <i class="fas fa-minus nav-icon"></i>
+                  <p>Stock Location Report</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">Settings</li>
+          <li class="nav-item">
+            <a href="general.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                General
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="paymentmethod.html" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Payment Methods
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="shops.html" class="nav-link">
+              <i class="nav-icon fas fa-store"></i>
+              <p>
+                Branches
+              </p>
+            </a>
+          </li>
+          <li class="nav-header">LABELS</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">Important
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>Warning</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>Informational</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+   <!-- Content Wrapper. Contains page content -->
+   <div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 my-2">
+            <H3 class="mb-3 d-inline-block">Opening Balance</H3>
+            <a href="" data-toggle="modal" data-target="#modal-new" class="btn btn-warning btn-sm float-right"><i class="fas fa-plus"></i> New</a>
+            <table id="example1" class="table table-bordered table-striped shadow-sm my-2">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>INVOICE DATE</th>
+                <th>HANDOVER PERSON</th>
+                <th>RECEIVE PERSON</th>
+                <th>LOCATION</th>
+                <th>QTY</th>
+                <th>REMARK</th>
+                <th>ACTIONS</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="align-middle">1</td>
+                <td class="align-middle">30-03-2022</td>
+                <td class="align-middle">Aung Thu</td>
+                <td class="align-middle">Pyae Pyae</td>
+                <td class="align-middle">Shop 1</td>
+                <td class="align-middle">
+                  23
+                </td>
+                <td class="align-middle">-</td>
+                <td>
+                  <a href="" data-toggle="modal" data-target="#modal-lg" class="btn btn-sm btn-outline-warning"><i class="fas fa-eye"></i></a>
+                  <a href="" class="btn btn-sm btn-outline-dark"><i class="fas fa-pen"></i></a>
+                  <a href="" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Default box -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <div class="modal fade show" id="modal-lg" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h4 class="modal-title">Shop 2 (23-03-2022)</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">×</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <p>One fine body…</p>
+    </div>
+    <div class="modal-footer justify-content-end">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade show" id="modal-new" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h4 class="modal-title">New Stock Transfer</h4>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">×</span>
+    </button>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="inputInvoiceDate">Invoice Date</label>
+              <input type="date" class="form-control" id="inputInvoiceDate" value="">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="inputHandover">Handover Person</label>
+              <input type="text" class="form-control" id="inputHandover" placeholder="Enter Name Here!...">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="inputReceive">Receive Person</label>
+              <input type="text" class="form-control" id="inputReceive" placeholder="Enter Name Here!...">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputLocation">Location</label>
+              <select class="form-control select2bs4" style="width: 100%;">
+                <option selected="selected">Warehouse</option>
+                <option>Shop 1</option>
+                <option>Shop 2</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputRemark">Remark</label>
+              <input type="text" class="form-control" id="inputRemark" placeholder="Enter Remark Here!...">
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title float-none">
+              <input type="text" class="form-control" id="inputCustomerName" placeholder="Enter Item Name Here!...">
+            </h3>
+          </div>
+          
+          <div class="card-body p-0">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>DESCRIPTION</th>
+                  <th>QUANTITY</th>
+                  <th>PRICE</th>
+                  <th>SUBTOTAL</th>
+                  <th style="width: 40px">ACTIONS</th>
+                </tr>
+              </thead>
+            <tbody>
+            <tr>
+            <td>1.</td>
+            <td>Update software</td>
+            <td>2</td>
+            <td>13000</td>
+            <td>26000</td>
+            <td>
+              <a href="#" class="btn btn-danger btn-sm px-3">x</a>
+            </td>
+            </tr>
+            <tr>
+            <td>2.</td>
+            <td>Clean database</td>
+            <td>1</td>
+            <td>5900</td>
+            <td>5900</td>
+            <td>
+              <a href="#" class="btn btn-danger btn-sm px-3">x</a>
+            </td>
+            </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>2</td>
+                <td></td>
+                <td>3</td>
+                <td></td>
+                <td>31900</td>
+                <td></td>
+              </tr>
+            </tfoot>
+            </table>
+          </div>
+          
+          </div>
+      </form>
+    </div>
+    <div class="modal-footer justify-content-end">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-warning">Save</button>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+
+    $("#example1").DataTable({
+      // pageLength: "15",
+      language: {
+      oPaginate: {
+        sNext: '<i class="fas fa-angle-right"></i>',
+        sPrevious: '<i class="fas fa-angle-left"></i>',
+        }
+        },
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+  });
+</script>
+</body>
+</html>
